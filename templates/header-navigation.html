@@ -1,0 +1,61 @@
+<header class="header">
+  <!-- skip to content, used for screen reader to take them directly to the main content -->
+  <a class="skip-to-content" href="#main">Zum Hauptinhalt springen</a>
+  <!-- H1, only the page title if it is the homepage, visually hidden because of the logo -->
+  <h1 class="title visually-hidden">Website Title</h1>
+  <!-- navigation -->
+  <nav class="navigation">
+    <!-- mobile menu button -->
+    <button class="navigation__menu-button" href="" title="Menu" aria-labelledby="burger-title" aria-expanded="false" aria-controls="menu">
+      Menu
+      <!-- use title tag of svg as aria-labelledby for button if you only use an image -->
+      <object data="burger.svg" type="image/svg+xml">
+        <img src="burger-fallback.jpg" />
+      </object>
+    </button>
+    <!-- menu -->
+    <ul id="menu" class="menu menu--hidden menu--main">
+      <!-- first menu item is used for the link to the homepage so use the logo for it -->
+      <li class="menu__item menu__item--level1 menu__item--home">
+        <a class="menu__link menu__link--home" href="/">
+          <!-- logo -->
+          <object data="logo.svg" type="image/svg+xml">
+            <img src="logo-fallback.jpg" />
+          </object>
+          <span class="visually-hidden">Home</span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--level1">
+        <a class="menu__link" href="/page1.html">Page 1</a>
+        <ul class="menu__submenu">
+          <li class="menu__item menu__item--level2">
+            <a class="menu__link" href="/subpage1.html">Subpage 1</a>
+          </li>
+          <li class="menu__item menu__item--level2">
+            <a class="menu__link" href="/subpage2.html">Subpage 1</a>
+          </li>
+          <li class="menu__item menu__item--level2">
+            <a class="menu__link" href="/subpage3.html">Subpage 1</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--level1">
+        <a class="menu__link" href="/page2.html">Page 2</a>
+      </li>
+      <li class="menu__item menu__item--level1">
+        <a class="menu__link" href="/page3.html">Page 3</a>
+      </li>
+      <li class="menu__item menu__item--level1">
+        <a class="menu__link" href="/page4.html">Page 4</a>
+      </li>
+    </ul>
+    <!-- search -->
+    <button class="navigation__search-button" href="/pages/search" title="Suche" aria-labelledby="search-title">
+      Search
+      <!-- use title tag of svg as aria-labelledby for button if you only use an image -->
+      <object data="magnifier.svg" type="image/svg+xml">
+        <img src="magnifier-fallback.jpg" />
+      </object>
+    </button>
+  </nav>
+</header>
